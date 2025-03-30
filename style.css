@@ -1,0 +1,362 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Added for better layout control */
+}
+
+header{
+    height: 66px;
+    width: 100%; /* Changed to 100% for responsive design */
+    background-color: #ffff;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.img1{
+    height: 43px;
+    width: 698px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+img{
+    height: 40px;
+    width: 140px;
+    object-fit: contain; /* Ensures image fits inside without stretching */
+    margin-left: 50px;
+}
+
+button{
+    height: 40px;
+    width: 44px;
+    padding: 8px 8px 8px 12px;
+    border: none; /* Optional: Added for better styling */
+    cursor: pointer; /* Optional: Shows pointer cursor on hover */
+}
+
+input{
+    height: 40px;
+    width: 458px;
+    padding: 8px 8px 8px 12px;
+    border: 1px solid #ccc; /* Optional: Added basic input border */
+    outline: none; /* Optional: Removes default browser outline */
+}
+
+#searchIcon{
+    height: 80px;
+    width: 80px;
+    
+}
+
+.profile{
+    height: 41px;
+    width: 530px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-Section {
+    width: 1285px;
+    /* remove height */
+}
+
+
+
+
+.list{
+    height: 141px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.list img {
+    display: block; /* Makes image a block element */
+    margin: 0 auto; /* Center image horizontally */
+    width: 100%; /* Ensures image is responsive */
+}
+
+.list span {
+    display: block; /* Places text below image */
+    margin-top: 10px; /* Space between image and text */
+    font-size: 15px;
+    color: black;
+    text-align: center; /* Centers text horizontally */
+    font-weight: bold; /* Optional: Makes text bold */
+}
+
+.offers {
+    width: 100%; /* Makes container full width */
+    display: flex; /* Align content properly */
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+    height: 207px; /* Fixed height */
+    overflow: hidden; /* Prevents content overflow */
+}
+
+#sale {
+    width: 100%; /* Makes image responsive */
+    height: 100%; /* Makes image fill container height */
+    object-fit: cover; /* Prevents image distortion while filling container */
+}
+
+.bestPrice {
+    width: 100%;
+    display: flex; /* Align items horizontally */
+    text-align: center; /* Align text inside container */
+    gap: 18px; /* Space between elements */
+    justify-content: space-between; /* Space between both divs */
+    align-items: center; /* Vertically center content */
+}
+
+.only {
+    display: flex; /* Align items horizontally */
+    justify-content: space-evenly; /* Evenly distribute content */
+    align-items: center; /* Vertically center content */
+    width: 100%; /* Adjusted width for better layout */
+    gap: 10px; /* Space between items */
+}
+
+.bestPrice img {
+    width: 100px; /* Fixed image size for consistency */
+    height: 100px; /* Fixed height */
+    object-fit: cover; /* Maintain image aspect ratio without distortion */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.bestPrice span {
+    font-size: 15px;
+    color: black;
+    text-align: center; /* Center text below image */
+    font-weight: bold;
+    display: block; /* Ensure text stays below image */
+}
+
+.flightOffer {
+    width: 18%; /* Set width to align with 499only */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flightOffer img {
+    margin-top: 10px;
+    width: 80%; /* Full width inside flightOffer container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.smartphone {
+    display: flex; /* Align items horizontally */
+    justify-content: space-evenly; /* Evenly distribute content */
+    align-items: center; /* Vertically center content */
+    width: 65%; /* Adjusted width for better layout */
+    gap: 10px; /* Space between items */
+}
+
+
+
+.smartphone img {
+    width: 100px; /* Fixed image size for consistency */
+    height: 100px; /* Fixed height */
+    object-fit: cover; /* Maintain image aspect ratio without distortion */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.smartphone span {
+    font-size: 15px;
+    color: black;
+    text-align: center; /* Center text below image */
+    font-weight: bold;
+    display: block; /* Ensure text stays below image */
+}
+
+.rewards {
+    display: flex; /* Align items horizontally */
+    justify-content: space-evenly; /* Evenly distribute content */
+    align-items: center; /* Vertically center content */
+    width: 100%; /* Adjusted width for better layout */
+    gap: 10px; /* Space between items */
+    margin-top: 20px;
+}
+
+.rewards img {
+    width: 100%; /* Fixed image size for consistency */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Maintain image aspect ratio without distortion */
+    margin-top: 10px;
+}
+
+.fourBoxes{
+    display: flex; /* Align items horizontally */
+    justify-content: space-evenly; /* Evenly distribute content */
+    align-items: center; /* Vertically center content */
+    width: 100%; /* Adjusted width for better layout */
+    gap: 10px; /* Space between items */
+    margin-top: 20px;
+
+}
+
+.furniture {
+    display: grid; /* Grid layout for perfect alignment */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns in one row */
+    gap: 20px; /* Horizontal and Vertical space */
+    justify-content: center; /* Center whole grid */
+    align-items: center; /* Align vertically */
+    padding: 20px; /* Space from border */
+}
+
+.furniture div {
+    height: 200px; /* Fixed height */
+    width: 200px; /* Fixed width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text and image */
+    align-items: center;
+    border: 1px solid #ccc; /* Border jaisa Flipkart ka look */
+    text-align: center; 
+    gap: 10px; /* Image aur text ke beech gap */
+    border-radius: 10px; /* Thoda smooth look */
+    transition: 0.3s ease; /* Hover effect smooth */
+}
+
+.furniture img {
+    width: 100px; 
+    height: 100px;
+    object-fit: contain; /* Image ko stretch hone se bachane ke liye */
+}
+
+.furniture span {
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+.easy {
+    display: grid; /* Grid layout for perfect alignment */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns in one row */
+    gap: 20px; /* Horizontal and Vertical space */
+    justify-content: center; /* Center whole grid */
+    align-items: center; /* Align vertically */
+    padding: 20px; /* Space from border */
+}
+
+.easy div {
+    height: 200px; /* Fixed height */
+    width: 200px; /* Fixed width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text and image */
+    align-items: center;
+    border: 1px solid #ccc; /* Border jaisa Flipkart ka look */
+    text-align: center; 
+    gap: 10px; /* Image aur text ke beech gap */
+    border-radius: 10px; /* Thoda smooth look */
+    transition: 0.3s ease; /* Hover effect smooth */
+}
+
+.easy img {
+    width: 100px; 
+    height: 100px;
+    object-fit: contain; /* Image ko stretch hone se bachane ke liye */
+}
+
+.easy span {
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+.Appliances {
+    display: grid; /* Grid layout for perfect alignment */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns in one row */
+    gap: 20px; /* Horizontal and Vertical space */
+    justify-content: center; /* Center whole grid */
+    align-items: center; /* Align vertically */
+    padding: 20px; /* Space from border */
+}
+
+.Appliances div {
+    height: 200px; /* Fixed height */
+    width: 200px; /* Fixed width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text and image */
+    align-items: center;
+    border: 1px solid #ccc; /* Border jaisa Flipkart ka look */
+    text-align: center; 
+    gap: 10px; /* Image aur text ke beech gap */
+    border-radius: 10px; /* Thoda smooth look */
+    transition: 0.3s ease; /* Hover effect smooth */
+}
+
+.Appliances img {
+    width: 100px; 
+    height: 100px;
+    object-fit: contain; /* Image ko stretch hone se bachane ke liye */
+}
+
+.Appliances span {
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+.express {
+    width: 100%; /* Makes container full width */
+    display: flex; /* Align content properly */
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+    height: 207px; /* Fixed height */
+    overflow: hidden; /* Prevents content overflow */
+}
+
+#fly {
+    width: 100%; /* Makes image responsive */
+    height: 100%; /* Makes image fill container height */
+    object-fit: cover; /* Prevents image distortion while filling container */
+}
+
+.offer2 img {
+    width: 100%; /* Image will take full width of parent */
+    height: 430px; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop the image without distortion */
+    border-radius: 10px; /* Optional for rounded corners */
+}
+
+footer{
+    height: 1500px;
+    width: 100%; /* Changed to 100% for responsive design */
+    background-color: black;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.info-Section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* creates space between .top and .searched */
+    color: white;
+  }
+
+  .about{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* creates space between .top and .searched */
+    color: white;
+  }
+  
+
+
+
+
+
+
+
