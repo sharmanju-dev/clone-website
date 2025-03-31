@@ -356,11 +356,63 @@ footer {
     margin-top: 10px; /* Adds space from .info-Section */
     display: flex;
     justify-content: space-between;
+    
 }
 
 ul a{
     display: block;
 }
+
+.Mail{
+    border-left: 0.5px solid whitesmoke; 
+    padding-left: 30px;
+    
+}
+
+.social{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: row;
+    
+}
+
+.social a {
+    font-size: 20px;  /* Make icons bigger */
+    margin-top: 10px; /* Space between icons */
+    text-decoration: none; /* Remove default link underline */
+    
+}
+
+
+
+.copyWrite {
+    background-color: black;
+    color: white;
+    border-top: 0.5px solid whitesmoke;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    margin-top: 1px;
+   
+}
+
+.copyWrite a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+    font-size: 14px;
+}
+
+
+
+
 
   
   
