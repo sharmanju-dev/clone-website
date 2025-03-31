@@ -330,28 +330,42 @@ input{
     border-radius: 10px; /* Optional for rounded corners */
 }
 
-footer{
-    height: 1500px;
-    width: 100%; /* Changed to 100% for responsive design */
-    background-color: black;
+footer {
+    width: 100%; /* Responsive design */
+    background-color: white;
     display: flex;
-    gap: 20px;
-    justify-content: flex-start;
+    flex-direction: column; /* Stack children vertically */
+    gap: 20px; /* Space between sections */
+    padding: 20px 0; /* Add padding to avoid content sticking */
 }
 
 .info-Section {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* creates space between .top and .searched */
-    color: white;
-  }
+    gap: 20px; /* Creates space between child elements */
+    color: black;
+    width: 100%; /* Ensures it takes full width */
+    padding: 20px; /* Adds spacing */
+}
 
-  .about{
+.unique{
+    background-color: black;
+    color: white; /* Light gray background */
+    padding: 20px;
+    width: 100%; /* Ensure full width */
+    margin-top: 10px; /* Adds space from .info-Section */
     display: flex;
-    flex-direction: column;
-    gap: 20px; /* creates space between .top and .searched */
-    color: white;
-  }
+    justify-content: space-between;
+}
+
+ul a{
+    display: block;
+}
+
+  
+  
+
+  
   
 
 
