@@ -120,7 +120,7 @@ input{
     display: flex; /* Align items horizontally */
     justify-content: space-evenly; /* Evenly distribute content */
     align-items: center; /* Vertically center content */
-    width: 100%; /* Adjusted width for better layout */
+    width: 100%; /* Adjusted height for better layout */
     gap: 10px; /* Space between items */
 }
 
